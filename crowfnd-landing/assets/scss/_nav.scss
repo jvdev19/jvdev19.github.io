@@ -1,0 +1,37 @@
+.nav {
+    position: relative;
+    top: 2rem;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    .menu{
+        display: none;
+        position: absolute;
+        padding-left: 0;
+        top: 3.6rem;
+        left: 0;
+        right: 0;
+        margin:0 1.438rem;
+        background-color: $white;
+        border-radius: $border-radius;
+        li{
+            list-style-type: none;
+            border-bottom: solid 1px $gray-e;
+            &:last-child{
+                border-bottom: none;
+            }
+            a{
+                text-decoration: none;
+                color: $black;
+                display: block;
+                padding: 1.125rem 1.563rem;
+            }
+        }
+    }
+    &.active {
+        .menu {
+            display: block;
+        }
+    }
+}

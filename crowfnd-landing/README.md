@@ -1,2 +1,2 @@
-# CROWDFUND_LANDING
- Landing page for crowdfunding platform
+# JVDEV19
+ My frontend playground.

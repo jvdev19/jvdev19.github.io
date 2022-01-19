@@ -1,0 +1,33 @@
+// Color
+$primary:#147B74;
+$primary-light:#3CB4AA;
+$dark-gray:#7A7A7A;
+$light-gray:#FAFAFA;
+$gray-e:#eee;
+
+// Layout
+$main-container-mw:1110px;
+$project-container-mw:730px;
+$gutter: 1.438rem;
+$border-radius:0.7rem;
+
+// Fonts - Headings
+$font-family-sans-serif:'Commissioner', sans-serif;
+$h1-font-size:29px;
+$h2-font-size:20px;
+$h3-font-size:18px;
+
+// Fonts - Custom
+$counter:33px;
+$price:33px;
+
+
+// Custom breakpoint map
+$grid-breakpoints: (
+    xs: 376px,
+    sm: 475px,
+    md: 650px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1441px
+);

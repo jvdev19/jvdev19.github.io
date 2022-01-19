@@ -1,0 +1,17 @@
+@function imgpath($folder,$img){
+  $path:'../images';
+  @return url($path+$folder+'/'+$img);
+}
+
+  //Prefixes
+$prefixes: '-webkit-','-moz-','-o-','-ms-';
+@mixin prefixed ($property,$value){
+  @each $prefix in $prefixes{
+    #{unquote($prefix)}#{$property}:$value;
+    #{$property}:$value;
+  }
+}
+
+
+
+  

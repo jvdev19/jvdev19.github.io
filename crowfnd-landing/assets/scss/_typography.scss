@@ -1,0 +1,45 @@
+%heading-custom{
+  color: $black;
+  font-weight: 700;
+}
+// Font Family
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+  font-family: $font-family-sans-serif;
+}
+
+// Font sizes - Pragraphs & headings
+p {
+  font-size: $font-size-base;
+  color: $dark-gray;
+}
+
+h1 {
+  @extend %heading;
+  @extend %heading-custom;
+  @include font-size($h1-font-size);
+}
+
+h2 {
+  @extend %heading;
+  @extend %heading-custom;
+  @include font-size($h2-font-size);
+}
+
+h3 {
+  @extend %heading;
+  @extend %heading-custom;
+  @include font-size($h3-font-size);
+}
+
+// Font sizes - Custom
+span.counter{
+  @include font-size($counter);
+}
+span.price{
+  @include font-size($price);
+
+}
+
+
+  

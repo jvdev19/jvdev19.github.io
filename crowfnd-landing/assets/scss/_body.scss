@@ -1,0 +1,26 @@
+%block{
+    box-sizing: border-box;
+    padding:2.813rem $gutter;
+    background-color:$white;
+    border-radius: $border-radius;
+    border: solid 1px $gray-200;
+}
+
+/* Block */
+.block{
+    @extend %block;
+}
+/* Inner Block - Bordered, for stands */
+.inner-block{
+    @extend %block;
+}
+
+.mastercraft-logo{
+    position: relative;
+    img{
+        position: absolute;
+        top: -29px;
+        left: 0;
+        right: 0;
+    }
+}
