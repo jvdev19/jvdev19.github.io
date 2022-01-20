@@ -3583,6 +3583,7 @@ h1, h2, h3 {
 
 p {
   font-size: 1rem;
+  line-height: 1.5rem;
   color: #7A7A7A; }
 
 h1 {
@@ -3608,6 +3609,11 @@ span.price {
   @media (min-width: 1200px) {
     span.price {
       font-size: 2.0625rem; } }
+
+/* Responsive */
+@media (min-width: 650px) {
+  p {
+    line-height: 1.9rem; } }
 
 .header {
   width: 100%;
@@ -3828,6 +3834,9 @@ body {
   background-color: #fff;
   border-radius: 0.6rem;
   border: solid 1px #f1f1f1; }
+  @media (min-width: 650px) {
+    .block, .inner-block {
+      padding: 3rem 3.5rem; } }
 
 /* Block */
 /* Inner Block - Bordered, for stands */
