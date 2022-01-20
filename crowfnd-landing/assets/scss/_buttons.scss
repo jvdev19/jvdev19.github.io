@@ -27,7 +27,7 @@
     @include media-breakpoint-up(md){ 
         img{
             position: relative;
-            left: 37px;
+            left: 29px;
         }
     }
     
@@ -38,7 +38,7 @@
         border-bottom-left-radius: 0px;
         padding-right: 0;
         font-weight: 700;
-        min-width: 160px;
+        min-width: 145px;
         background-color: $gray-f4;
         color: $dark-gray;
         @include media-breakpoint-up(md){ 
