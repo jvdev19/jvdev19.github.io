@@ -8,6 +8,7 @@
         width: 100%;
         top: 0;
         left: 0;
+        right: 0;
         position: absolute;
         z-index: -1;
         .hero{
@@ -97,10 +98,29 @@
     }
 }
 @include media-breakpoint-up(xxl) {
-    .header{    
+    .header{  
+        height: 533.3px;  
         .hero-container{
             .hero{
                 img{
+                    width: 1920px;
+                    min-width: 1920px;
+                }
+            }
+        }
+    }       
+ }
+@include media-breakpoint-up(xxxl) {
+    .header{    
+        height: 533.3px;
+        .hero-container{
+            margin: auto;
+            max-width: 1920px;
+            
+            .hero{
+                img{
+                    border-bottom-left-radius: 60px;
+                    border-bottom-right-radius: 60px;
                     width: 1920px;
                 }
             }

@@ -33,3 +33,17 @@ body{
       @include make-container(0.938rem);      
     }
 }
+
+
+/* Responsive */
+@include media-breakpoint-up(md){
+  .main-container {
+    padding:0rem 6rem;
+  }
+}
+@include media-breakpoint-up(minbp1){
+  .main-container {
+    padding-right: var(--#{$variable-prefix}gutter-x, #{$gutter});
+    padding-left: var(--#{$variable-prefix}gutter-x, #{$gutter});
+  }
+}

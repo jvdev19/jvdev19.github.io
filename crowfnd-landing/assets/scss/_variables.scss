@@ -4,13 +4,15 @@ $primary-light:#3CB4AA;
 $dark-gray:#7A7A7A;
 $light-gray:#FAFAFA;
 $gray-e:#eee;
+$gray-d:#ddd;
+$gray-f1:#f1f1f1;
 $gray-f3:#f3f3f3;
 $gray-f4:#F4F4F4;
 $gray-f7:#F7F7F7;
 
 // Layout
-$main-container-mw:1110px;
-$project-container-mw:730px;
+$main-container-mw:1170px;
+$project-container-mw:760px;
 $gutter: 1.438rem;
 $border-radius:0.6rem;
 
@@ -32,5 +34,7 @@ $grid-breakpoints: (
     md: 650px,
     lg: 992px,
     xl: 1200px,
-    xxl: 1441px
+    minbp1:1300px,
+    xxl: 1441px,
+    xxxl:1923px
 );
