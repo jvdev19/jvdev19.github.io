@@ -13,6 +13,10 @@ body{
       background: linear-gradient(180deg, rgba(0,0,0,0.7175245098039216) 7%, rgba(0,0,0,0.5186449579831933) 45%, rgba(0,0,0,0) 100%);
     }
   }
+  main{
+    box-sizing: border-box;
+    padding-bottom: 6rem;
+  }
 }
 
 .main-container {

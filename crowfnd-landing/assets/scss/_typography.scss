@@ -12,7 +12,9 @@
 p {
   font-size: $font-size-base;
   line-height: 1.5rem;
-  color: $dark-gray;
+  font-weight: 300;
+  /* color: $dark-gray; */
+  color: $text-color;
 }
 
 h1 {
@@ -36,6 +38,7 @@ h3 {
 // Font sizes - Custom
 span.counter{
   @include font-size($counter);
+  font-weight: 700;
 }
 span.price{
   @include font-size($price);

@@ -27,3 +27,72 @@
         right: 0;
     }
 }
+
+/* Counters */
+.counters{
+    .counter-block{
+        .counter{
+            display: block;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        .counter, p{
+            text-align: center;
+        }
+        &::after{
+            content: '';
+            position: relative;
+            display: block;
+            margin: 1.4rem auto;
+            height: 1px;
+            width: 4rem;
+            background-color: $gray-d;
+        }
+        &:last-child{
+            &::after{
+                content: none;
+            }
+        }
+    }
+}
+
+
+/* Counter-bar */
+.counterbar{
+    margin-top: 1.875rem;
+    border-radius: 40px;
+    background-color: $gray-f4;
+    display: block;
+    width: 100%;
+    height: 12px;
+    overflow: hidden;
+    .counterbar-fill{
+        background-color: $primary-light;
+        border-radius: 40px;
+        display: block;
+        width: 40%;
+        height: 100%;
+    }
+}
+
+
+/* Responsive */
+@include media-breakpoint-up(minbp2){
+    .counters{
+        .counter-block{
+            position: relative;
+            .counter, p{
+                text-align: left;
+            }
+            &::after{
+                position: absolute;
+                right: -2px;
+                top: 15px;
+                margin: auto 1.4rem;
+                height: 4rem;
+                width: 1px;
+            }
+        }
+    }    
+}

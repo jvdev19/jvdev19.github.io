@@ -3584,7 +3584,9 @@ h1, h2, h3 {
 p {
   font-size: 1rem;
   line-height: 1.5rem;
-  color: #7A7A7A; }
+  font-weight: 300;
+  /* color: $dark-gray; */
+  color: #8D8D8E; }
 
 h1 {
   font-size: calc(1.3rem + 0.6vw); }
@@ -3599,10 +3601,11 @@ h3 {
   font-size: 1.125rem; }
 
 span.counter {
-  font-size: calc(1.33125rem + 0.975vw); }
+  font-size: calc(1.34375rem + 1.125vw);
+  font-weight: 700; }
   @media (min-width: 1200px) {
     span.counter {
-      font-size: 2.0625rem; } }
+      font-size: 2.1875rem; } }
 
 span.price {
   font-size: calc(1.33125rem + 0.975vw); }
@@ -3786,6 +3789,9 @@ body {
       top: 0;
       left: 0;
       background: linear-gradient(180deg, rgba(0, 0, 0, 0.717525) 7%, rgba(0, 0, 0, 0.518645) 45%, rgba(0, 0, 0, 0) 100%); }
+  body main {
+    box-sizing: border-box;
+    padding-bottom: 6rem; }
 
 .main-container {
   max-width: 1170px;
@@ -3847,6 +3853,58 @@ body {
     top: -29px;
     left: 0;
     right: 0; }
+
+/* Counters */
+.counters .counter-block .counter {
+  display: block; }
+
+.counters .counter-block p {
+  margin-bottom: 0; }
+
+.counters .counter-block .counter, .counters .counter-block p {
+  text-align: center; }
+
+.counters .counter-block::after {
+  content: '';
+  position: relative;
+  display: block;
+  margin: 1.4rem auto;
+  height: 1px;
+  width: 4rem;
+  background-color: #ddd; }
+
+.counters .counter-block:last-child::after {
+  content: none; }
+
+/* Counter-bar */
+.counterbar {
+  margin-top: 1.875rem;
+  border-radius: 40px;
+  background-color: #F4F4F4;
+  display: block;
+  width: 100%;
+  height: 12px;
+  overflow: hidden; }
+  .counterbar .counterbar-fill {
+    background-color: #3CB4AA;
+    border-radius: 40px;
+    display: block;
+    width: 40%;
+    height: 100%; }
+
+/* Responsive */
+@media (min-width: 768px) {
+  .counters .counter-block {
+    position: relative; }
+    .counters .counter-block .counter, .counters .counter-block p {
+      text-align: left; }
+    .counters .counter-block::after {
+      position: absolute;
+      right: -2px;
+      top: 15px;
+      margin: auto 1.4rem;
+      height: 4rem;
+      width: 1px; } }
 
 .btn, .bookmark-btn, .bookmark-btn .bookmark-text {
   box-sizing: border-box;

@@ -9,6 +9,7 @@ $gray-f1:#f1f1f1;
 $gray-f3:#f3f3f3;
 $gray-f4:#F4F4F4;
 $gray-f7:#F7F7F7;
+$text-color:#8D8D8E;
 
 // Layout
 $main-container-mw:1170px;
@@ -24,7 +25,7 @@ $h2-font-size:20px;
 $h3-font-size:18px;
 
 // Fonts - Custom
-$counter:33px;
+$counter:35px;
 $price:33px;
 
 
@@ -33,6 +34,7 @@ $grid-breakpoints: (
     xs: 376px,
     sm: 475px,
     md: 650px,
+    minbp2:768px,
     lg: 992px,
     xl: 1200px,
     minbp1:1300px,
