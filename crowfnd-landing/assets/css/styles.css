@@ -3709,7 +3709,7 @@ span.price {
 
 .nav {
   position: relative;
-  top: 2rem;
+  top: 1.7rem;
   left: 0;
   z-index: 3;
   display: flex;
@@ -3725,7 +3725,10 @@ span.price {
     transition: 0.2s; }
   @media (min-width: 650px) {
     .nav {
-      top: 2.5rem; } }
+      top: 1.5rem; } }
+  .nav .logo {
+    display: flex;
+    align-items: center; }
   .nav .burger {
     display: block; }
   .nav .menu {

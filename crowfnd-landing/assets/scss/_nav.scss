@@ -1,13 +1,17 @@
 .nav {
     *{@include prefixed(transition, .2s);}
-    position: relative;
-    top: 2rem;
+    position: relative; 
+    top: 1.7rem;
     left: 0;
     z-index: 3;
     display: flex;
     justify-content: space-between;
     @include media-breakpoint-up(md){
-        top: 2.5rem;
+        top: 1.5rem;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
     }
     .burger{
         display: block;
