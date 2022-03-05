@@ -14,7 +14,7 @@
     "shortcuts": [],
     "icons": [
         {
-            "src": "/img/test-icon.png",
+            "src": "jv-test/pwa/img/test-icon.png",
             "type": "image/png",
             "sizes": "512x512"
         }
