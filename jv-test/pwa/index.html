@@ -9,6 +9,11 @@
 </head>
 <body>
     Hola mundo, hello world. My first pwa!
-    <script src="js/sw.js"></script>
+    
+<script type="text/javascript">
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+</script>
 </body>
 </html>
