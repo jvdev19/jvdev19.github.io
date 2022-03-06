@@ -3,7 +3,7 @@ module.exports = {
 	globPatterns: [
 		'**/*.{png,html,js,json}'
 	],
-	swDest: '/jv-test/pwa/sw.js',
+	swDest: 'sw.js',
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/
