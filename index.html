@@ -11,11 +11,6 @@
     Hola mundo, hello world. My first pwa!
     
 <script type="text/javascript">
-    new WorkboxPlugin.GenerateSW({
-        clientsClaim: true,
-        skipWaiting: true,
-        exclude: [/crowfnd-landing/]
-    });
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("sw.js");
     }
