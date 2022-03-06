@@ -1,9 +1,9 @@
 module.exports = {
-	globDirectory: '.',
+	globDirectory: 'jv-test/pwa',
 	globPatterns: [
 		'**/*.{png,html}'
 	],
-	swDest: 'sw.js',
+	swDest: 'jv-test/pwa/sw.js',
 	ignoreURLParametersMatching: [
 		/^utm_/,
 		/^fbclid$/
