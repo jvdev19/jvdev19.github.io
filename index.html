@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,49 @@
     <link rel="manifest" href="manifest.json">
     <title>JV TEST PWA</title>
 </head>
+
 <body>
-    Hola mundo, hello world. My first pwa!
-    
-<script type="text/javascript">
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("sw.js");
-    }
-    
-</script>
+    <p>
+        Hola mundo, hello world. My first pwa!
+    </p>
+    <p>
+        <button>
+            Permitir notificaciones
+        </button>
+    </p>
+
+
+    <script type="text/javascript">
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("sw.js");
+        }
+
+        /* Botón para permitir notificaciones */
+        var button = document.getElementById("notifications");
+        button.addEventListener('click', function (e) {
+            Notification.requestPermission().then(function (result) {
+                if (result === 'granted') {
+                    randomNotification();
+                }
+            });
+        });
+
+
+        /* Mi primera notificación */
+        function randomNotification() {
+            var randomItem = 'Notificación item-01';
+            var notifTitle = 'Mi primera notificación';
+            var notifBody = 'Creada por Gose';
+            var notifImg = 'img/noti.png';
+            var options = {
+                body: notifBody,
+                icon: notifImg
+            }
+            var notif = new Notification(notifTitle, options);
+            setTimeout(randomNotification, 30000);
+        }
+
+    </script>
 </body>
+
 </html>
