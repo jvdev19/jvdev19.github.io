@@ -5,16 +5,16 @@
     "display": "standalone",
     "name": "jvdev19.github",
     "orientation": "any",
-    "scope": "/jv-test/pwa",
+    "scope": "",
     "short_name": "jvdev19.github",
-    "start_url": "/jv-test/pwa",
+    "start_url": "",
     "theme_color": "#ffffff",
     "categories": [],
     "screenshots": [],
     "shortcuts": [],
     "icons": [
         {
-            "src": "jv-test/pwa/img/test-icon.png",
+            "src": "img/test-icon.png",
             "type": "image/png",
             "sizes": "512x512"
         }
